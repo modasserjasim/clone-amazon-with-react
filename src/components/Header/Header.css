@@ -1,0 +1,38 @@
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1C2B35;
+    height: 80px;
+    padding: 0 10%;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 36px;
+    font-size: 17px;
+    padding: 20px 0;
+
+}
+
+.header ul li a:hover {
+    color: orange;
+    border-bottom: 2px solid orange;
+    padding-bottom: 28px;
+
+}
+
+.header ul li a:active {
+    color: orange;
+    border-bottom: 2px solid orange;
+    padding-bottom: 28px;
+
+}

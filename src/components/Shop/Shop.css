@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.shop-container {
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 80px;
+}
+
+.products-container {
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 52px;
+}
+
+.cart-container {
+    background-color: #FF99004D;
+    padding: 16px;
+}
+
+.cart-info {
+    position: sticky;
+    top: 90px;
+}
