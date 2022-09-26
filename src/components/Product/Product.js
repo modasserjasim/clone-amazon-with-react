@@ -1,5 +1,7 @@
 import React from 'react';
-import './Product.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import './Product.css';
 
 const Product = (props) => {
     const { product, handleAddToCart } = props;
@@ -7,7 +9,7 @@ const Product = (props) => {
 
     return (
         <div className='product'>
-            <img src={img} alt="" />
+            <img src={img !== null || undefined ? img : 'https://res.cloudinary.com/dxdboxbyb/image/upload/v1620052094/ayi6tvyiedrlmjiim6yn.png'} alt="" />
 
             <div className='product-info'>
                 <h3>{name}</h3>
@@ -16,7 +18,10 @@ const Product = (props) => {
                 <p className='ratings'>Ratings: {ratings}</p>
             </div>
 
-            <button onClick={() => handleAddToCart(props.product)} className='add-to-cart' type="submit">Add to Cart <i className="fa-solid fa-cart-plus"></i></button>
+            <button onClick={() => handleAddToCart(props.product)} className='add-to-cart' type="submit">
+                <p>Add to Cart</p>
+                <FontAwesomeIcon icon={faCartPlus}></FontAwesomeIcon>
+            </button>
         </div>
     );
 };

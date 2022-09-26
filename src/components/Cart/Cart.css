@@ -1,0 +1,23 @@
+.cart-info {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px;
+}
+
+.cart-info h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #1C2B35;
+    margin-bottom: 30px;
+}
+
+.cart-info p {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #2A414F;
+    margin-bottom: 25px;
+}

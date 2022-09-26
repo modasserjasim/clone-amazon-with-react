@@ -5,8 +5,9 @@
 }
 
 .product img {
-    width: 286px;
-    height: 286px;
+    max-width: 96%;
+    max-height: 96%;
+    object-fit: cover;
     margin: 7px;
     border-radius: 6px;
 }
@@ -49,6 +50,9 @@
 }
 
 .add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #FFE0B3;
     border: 1px solid #95A0A7;
     border-radius: 0px 0px 8px 8px;
@@ -58,6 +62,11 @@
     bottom: 0;
     cursor: pointer;
     transition: 0.5s;
+}
+
+.add-to-cart p {
+    font-size: 16px;
+    margin-right: 10px;
 }
 
 .add-to-cart:hover {
